@@ -27,16 +27,17 @@ settings.configure(
     ALLOWED_HOSTS=ALLOWED_HOSTS,
     STATIC_URL="/static/",
     STATIC_ROOT=os.path.join(BASE_DIR, "staticfiles"),
-    DATABASES={
-        "default": {
-            "ENGINE": "django.db.backends.postgresql",
-            "NAME": config("DB_NAME", default="your_default_db_name"),
-            "USER": config("DB_USER", default="your_default_db_user"),
-            "PASSWORD": config("DB_PASSWORD", default="your_default_db_password"),
-            "HOST": config("DB_HOST", default="localhost"),
-            "PORT": config("DB_PORT", default="5432"),
-        }
-    },
+    # uncomment this after you have created your database in digitalocean
+    # DATABASES={
+    #     "default": {
+    #         "ENGINE": "django.db.backends.postgresql",
+    #         "NAME": config("DB_NAME", default="your_default_db_name"),
+    #         "USER": config("DB_USER", default="your_default_db_user"),
+    #         "PASSWORD": config("DB_PASSWORD", default="your_default_db_password"),
+    #         "HOST": config("DB_HOST", default="localhost"),
+    #         "PORT": config("DB_PORT", default="5432"),
+    #     }
+    # },
     INSTALLED_APPS=[
         # compulsory
         "django.contrib.auth",  # For user authentication
@@ -231,7 +232,7 @@ urlpatterns = [
     path("hello/", hello_world),  # Updated path
     path("privacy/", privacy),  # privacy
     path("say-my-name/", say_my_name),  # say-my-name
-    path("api/mydata/", MyDataView.as_view()),  # DRF
+    # path("api/mydata/", MyDataView.as_view()),  # DRF
     path("openapi/", schema_view, name="openapi-schema"),
     # path("accounts/", include("django.contrib.auth.urls")),  # for auth
     path("o/", include("oauth2_provider.urls", namespace="oauth2_provider")),
