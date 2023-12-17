@@ -61,16 +61,13 @@ Linux developers, you're on your own. 😊
 
 #### Stage 1 Steps
 
-1. Fork this repo.
+1. Create a new repo using this repo as template repo set it as private
 
-Because then it's easier to know where you last stopped.
+Because then it's easier to know where you last stopped and you need to store some env secrets.
 
-2. Go to settings and make your fork private.
+Best to keep your repo as private.
 
-Because you will need to add secrets. Check out the footnote[^2] if you don't know how to set to
-private.
-
-3. Make a separate branch from `main` and call it `develop`.
+2. Make a separate branch from `main` and call it `develop`.
 
 Easier to experiment if you keep your experiment on separate branch.
 
@@ -92,11 +89,26 @@ For windows developers, stay patient. I will have one for you soon.
 My early research shows me I have to use https://github.com/pyenv-win/pyenv-win
 
 
-6. Run the Django app locally and test against Postman.
+6. Install dependencies and make sure the django app can run hello world
 
 I have compiled the whole thing as a loom video here.
 
 [![Video Title or Description](https://link-to-your-screenshot.jpg)](https://www.loom.com/share/your-video-id)
+
+7. Get a managed postgres database on DigitalOcean
+
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=1be9f5a28874&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
+Click on the above to get $200 credit over the next 60 days if you don't already have an account.
+
+I have compiled the whole thing as a loom video here.
+
+[![Video Title or Description](https://link-to-your-screenshot.jpg)](https://www.loom.com/share/your-video-id)
+
+8. Update the .env with your database settings
+9. Uncomment the database settings in `manage.py`
+
+
 
 
 ### Stage 2: OAuth protected endpoint on DigitalOcean App Platform with Postman as client
