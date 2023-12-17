@@ -95,7 +95,7 @@ I have compiled the whole thing as a loom video here.
 
 [![Video Title or Description](https://link-to-your-screenshot.jpg)](https://www.loom.com/share/your-video-id)
 
-7. Get a managed postgres database on DigitalOcean
+7. Get a managed postgres database on DigitalOcean and set it to work with your local Django app
 
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg)](https://www.digitalocean.com/?refcode=1be9f5a28874&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
@@ -105,8 +105,12 @@ I have compiled the whole thing as a loom video here.
 
 [![Video Title or Description](https://link-to-your-screenshot.jpg)](https://www.loom.com/share/your-video-id)
 
-8. Update the .env with your database settings
-9. Uncomment the database settings in `manage.py`
+I broke down the steps at `.infrastructure/.dodb/HOWTOMAKEPOSTGRESWORK.md`
+
+
+8. Set up a client oauth app
+
+
 
 
 
