@@ -61,11 +61,11 @@ Linux developers, you're on your own. 😊
 
 #### Stage 1 Steps
 
-1. Clone this repo.
+1. Fork this repo.
 
 Because then it's easier to know where you last stopped.
 
-1. Go to settings and make it private.
+2. Go to settings and make your fork private.
 
 Because you will need to add secrets. Check out the footnote[^2] if you don't know how to set to
 private.
@@ -85,7 +85,7 @@ Go to https://www.postman.com/downloads/
 
 This is a tricky step as different OS will have different sub-steps.
 
-For macOS developers, follow the instructions under `.infrastructure/.macos/README.md`
+For macOS developers, follow the instructions under `.infrastructure/.macos/.venv-scripts/README.md`
 
 For windows developers, stay patient. I will have one for you soon.
 
